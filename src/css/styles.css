@@ -142,12 +142,57 @@ main {
   border-radius: 7px;
   transition: 0.3s ease-in-out;
 }
+.container .profile-data .repositories ul li a span{
+  display: flex;
+  margin-top: 10px;
+ }
+.container .profile-data .repositories ul li a span p{
+  background-color: rgb(128, 87, 199);
+  padding: 5px;
+  margin: 2px;
+  border-radius: 7px;
+  transition: 0.3s ease-in-out;
+  font-size: 12px;
+  color: white;
+}
 
 .container .profile-data .repositories ul li a:hover{
   background-color:hotpink;
   color: #fff
 }
 
+/* EVENTS */
+
+.container .profile-data .events h2{
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.container .profile-data .events ul{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container .profile-data .events ul li{
+  display: flex;
+  padding: 5px;  
+  margin: 10px;
+  font-size: 15px;
+}
+.container .profile-data .events ul li a{
+  font-weight: 700;
+  transition: 0.3s ease-in-out;
+}
+
+.container .profile-data .events ul li p{
+  padding-left: 8px;
+  display: flex;
+}
+
+.container .profile-data .events ul li a:hover{
+  color: hotpink;
+}
 .container .profile-data.hide{
   display: none;
 }

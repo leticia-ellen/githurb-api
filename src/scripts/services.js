@@ -1,4 +1,4 @@
-import { baseUrl, repositoriesQuantity } from "./variables.js"
+import { baseUrl, repositoriesQuantity, eventsQuantity } from "./variables.js"
 
 
 async function getUser(userName) {
@@ -14,7 +14,11 @@ async function getRepositories(userName) {
     
 }
 
+async function getEvents(userName) {
+   const response = await fetch(`${baseUrl}/${userName}/events?per_page=${eventsQuantity}`)
+   return await response.json()
+    
+}
 
 
-
-export{ getUser, getRepositories}
+export{ getUser, getRepositories, getEvents}
